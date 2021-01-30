@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="{{ url_for('static', filename='js/enabled.js') }}" defer></script>
+  <title>PERSONALITY</title>
+</head>
+<body>
+
+    <!-- Icon -->
+  <div class="fadeIn first" id="logo">
+      <img src="{{ url_for('static', filename='image/logo.png') }}" style="width:90px;height:90px;"  id="icon" alt="FindMyMovies Logo" >
+  </div>  
+
+    <!--Navigation-->
+  <div class="nav fadeIn" >
+    <a href="{{url_for('home')}}" >
+      <div  class="fadeIn first" id="navContent"   >
+          <img  src="{{ url_for('static', filename='image/home.png') }}" width="50px" height="50px" >
+        </div>
+    </a>
+    <a href="{{url_for('logout')}}" >  
+      <div class="navActive" class="fadeIn third" id="navContent"  >
+        <img   src="{{ url_for('static', filename='image/logout.png') }}" width="50px" height="50px" />
+        </div>
+    </a>
+  </div>
+
+  
+  
+  
+  <div class="wrapper fadeInDown">
+    <div id="formContent">
+      <h1>ThankYou, Come back soon!</h1>
+      <h2 style="color:slateblue">
+        Redirecting to Home Page after <span id="countdown" style="font-size: larger;color: purple;">10</span> seconds
+      </h2>      
+      </div>
+
+    </div>
+
+  
+
+    <!--CountDown Script-->  
+
+    <!-- Modify this according to your requirement -->
+
+    <!-- JavaScript part -->
+
+
+    <script type="text/javascript">
+    
+      // Total seconds to wait
+        var seconds = 5;
+      
+        function countdown() {
+          seconds = seconds - 1;
+          if (seconds < 0) {
+              // Chnage your redirection link here
+              window.location = "{{url_for('login')}}";
+          } else {
+              // Update remaining seconds
+              document.getElementById("countdown").innerHTML = seconds;
+              // Count down using javascript
+              window.setTimeout("countdown()", 1000);
+          }
+          }
+      
+        // Run countdown function
+        countdown();
+      
+        </script>
+
+  
+</body>
+
+
+</html>
+
+

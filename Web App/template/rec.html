@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Movie Info</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}">
+    <!-- Bootstrap core CSS -->
+   <!-- <link href="../css/bootstrap.min.css" rel="stylesheet"> -->
+   <!-- <link href="../css/style.css" rel="stylesheet"> -->
+
+
+  </head>
+
+    <!-- Icon -->
+    
+    <div class="fadeIn first" id="logo">
+      <img src="{{ url_for('static', filename='image/logo.png') }}" style="width:90px;height:90px;"  id="icon" alt="FindMyMovies Logo" >
+    </div>
+    <div class="fadeIn first" >
+      <a style='position:absolute;top: 0;right: 0;' href="{{url_for('rec')}}">See Recommendations</a>
+    </div>    
+    
+    <!--Navigation-->
+    <div class="nav fadeIn" >
+      <a href="{{url_for('home')}}">
+        <div  class="fadeIn second" id="navContent"  >
+            <img  src="{{ url_for('static', filename='image/home.png') }}" width="50px" height="50px" >
+        </div>
+      <a href="{{url_for('questions')}}" >  
+      <div  class="fadeIn second" id="navContent"  >
+        <img   src="{{ url_for('static', filename='image/questions.png') }}" width="50px" height="50px" />
+        </div>
+    </a>
+    <a href="{{url_for('movies')}}" id="20000" >  
+      <div class="navActive" class="fadeIn first" id="navContent"  >
+        <img   src="{{ url_for('static', filename='image/movie.png') }}" width="50px" height="50px" />
+        </div>
+    <a href="{{url_for('logout')}}" >  
+      <div  class="fadeIn third" id="navContent"  >
+        <img   src="{{ url_for('static', filename='image/logout.png') }}" width="50px" height="50px" />
+        </div>
+    </a>
+    </div>
+  
+
+
+
+    <div class="wrapper fadeInDown ">
+        <div id="formContent" class="fadeIn second" style="max-width: max-content;padding: 30px;font-size: 20px;text-align: left;">
+            
+
+            <img src={{aa}} style="width:700;height:400;box-shadow: 5px 10px;">
+            <p style="text-align:center;"><b>{{a}}</b></p>  
+            <br>  
+            <img src={{bb}} style="width:700;height:400;box-shadow: 5px 10px;">
+            <p style="text-align:center;"><b>{{b}}</b></p>
+            <br>
+            <img src={{cc}} style="width:700;height:400;box-shadow: 5px 10px;">
+            <p style="text-align:center;"><b>{{c}}</b></p>
+            <br>
+            <img src={{dd}} style="width:700;height:400;box-shadow: 5px 10px;">
+            <p style="text-align:center;"><b>{{d}}</b></p>
+            <br>
+            <img src={{ee}} style="width:700;height:400;box-shadow: 5px 10px;">
+            <p style="text-align:center;"><b>{{e}}</b></p>
+            <br>
+            <img src={{ff}} style="width:700;height:400;box-shadow: 5px 10px;">
+            <p style="text-align:center;"><b>{{f}}</b></p>
+            <br>
+            <img src={{gg}} style="width:700;height:400;box-shadow: 5px 10px;">
+            <p style="text-align:center;"><b>{{g}}</b></p>
+            <br>
+            <img src={{hh}} style="width:700;height:400;box-shadow: 5px 10px;">
+            <p style="text-align:center;"><b>{{h}}</b></p>
+            <br>
+            <img src={{ii}} style="width:700;height:400;box-shadow: 5px 10px;">
+            <p style="text-align:center;"><b>{{i}}</b></p>
+            <br>
+            <img src={{jj}} style="width:700;height:400;box-shadow: 5px 10px;">
+            <p style="text-align:center;"><b>{{j}}</b></p>
+            <br>
+
+        </div>
+    </div>
+</html>
+
+
+

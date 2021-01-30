@@ -1,0 +1,24 @@
+#movies img, #movie img{
+  width: 100%;
+  
+}
+
+@media(min-width:960px){
+  #movies .col-md-3 .well{
+    height: 600px;
+    background-color:RGB(16, 29, 82);
+
+    
+  }
+
+  #movies .col-md-3 img{
+    height: 340px;
+    
+  }
+}
+html {
+  background-color: RGB(39, 56, 125);
+}
+body {
+  background-color: RGB(39, 56, 125);
+}
